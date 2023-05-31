@@ -1,4 +1,5 @@
-# Utility tool
+# Customer Infomation Based On Mac Address
+
 1. Return company name from Mac Address
 2. ToDo
 
@@ -24,6 +25,9 @@ Company name for the Mac Address 44:38:39:ff:ef:57 is Cumulus Networks, Inc
 
 # ToDo
 Request authentication and encryption
+
 Create Python package 
+
 Create Docker Compose file if needed
+
 Push image to registry
