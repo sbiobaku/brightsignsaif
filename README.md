@@ -24,7 +24,7 @@ The company name will be displayed as follows
 Company name for the Mac Address 44:38:39:ff:ef:57 is Cumulus Networks, Inc
 
 # ToDo
-Request authentication and encryption
+Request Authentication and Encryption
 
 Create Python package 
 
