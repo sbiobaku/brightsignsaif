@@ -1,4 +1,5 @@
 import requests
+import argparse
 
 sessionRequests = requests.Session() 
 url = "https://mac-address.alldatafeeds.com"
@@ -32,6 +33,9 @@ def getReportDetails(reportId):
   
   
 if __name__ == '__main__':
-     macAddress = input('Enter The Mac Address :')
-     companyName  = getCompanyNameFromMac(macAddress)
-     print(f"Company name for the Mac Address {macAddress} is {companyName}")
+     parser = argparse.ArgumentParser()
+     parser.add_argument('--MacAddress', type=str, required=True)
+     args = parser.parse_args()
+     companyName  = getCompanyNameFromMac(args.MacAddress)
+     print(f"Company name for the Mac Address {args.MacAddress} is {companyName}")
+
