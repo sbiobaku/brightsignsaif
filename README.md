@@ -2,21 +2,19 @@
 1. Return company name from Mac Address
 2. ToDo
 
-
 # Running the tool
-Run: docker build . -t macAddressTool
+
+You must have docker installed and running
+
+Run: docker build . -t macaddresstool
 
 Run: docker images 
 
-Get the image Id (Image_ID)
+Get the IMAGE ID (Image_ID)
 
-The working directory should be set up on local machine as ~/workdir
+Run: mkdir ~/workdir
 
-Run: docker run -v ~/workdir:/etc/workdir  -t Image_ID
-
-cd ~/workdir
-
-Run: python3 allDataFeedMac.py 
+Run: docker run -v ~/workdir:/etc/workdir  -t Image_ID 
 
 Enter the Mac Address and click enter
 
@@ -27,4 +25,5 @@ Company name for the Mac Address 44:38:39:ff:ef:57 is Cumulus Networks, Inc
 # ToDo
 Request authentication and encryption
 Create Package 
+Create Docker Compose file
 Push image to registry
